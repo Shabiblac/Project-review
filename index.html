@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body> 
+    <section class="text-gray-600 body-font relative bg-cyan-100">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Microverse Survey form</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Thank you for taking the time to help us improve the platform</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto p-4 text-white" style="background-color: rgba(27, 27, 50, 0.8);">
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full text-gray-600 bg-opacity-50 rounded border border-gray-300 text-base outline-none py-1 px-3 leading-8 ">
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full text-gray-600 bg-opacity-50 rounded border border-gray-300 text-base outline-none py-1 px-3 leading-8">
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm">Age(Optional)</label>
+                      <input type="text" id="name" name="name" placeholder="Age" class="w-full text-gray-600 rounded border border-gray-300 text-base outline-none  py-1 px-3 leading-8">
+                    </div>
+                </div>
+
+                <div class="p-2 w-full">
+                    <div class="relative">
+                        <label for="">Which option best describes your current role?</label>
+                        <select class="w-full text-gray-600 bg-white rounded border border-gray-300 text-base outline-none py-1 px-3 leading-8" name="prefer">
+                            <option selected>Select current role ? </option>
+                            <option value="student">student</option>
+                            <option value="fullTimeJob">Full time job</option>
+                            <option value="fullTimeLearner">Full time learner</option>
+                            <option value="prefrenot">prefer not to say</option>
+                            <option value="others">others</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="p-2 w-full">
+                    
+                    <fieldset class="mb-5">
+                        <legend class="mb-2">
+                            Would you recommend microverse to a friend?
+                        </legend>
+                
+                        <div class="flex items-center mb-4">
+                            <input id="recommend-1" type="radio" name="recommend" value="" class="h-4 w-4 border-gray-300" >
+                            <label for="recommend-1" class="font-medium  ml-2 block">
+                                Definitly
+                            </label>
+                        </div>
+                
+                        <div class="flex items-center mb-4">
+                            <input id="recommend-2" type="radio" name="recommend" value="" class="h-4 w-4 border-gray-300 ">
+                            <label for="recommend-2" class="font-medium  ml-2 block">
+                                Maybe
+                            </label>
+                        </div>
+                
+                        <div class="flex items-center mb-4">
+                            <input id="recommend-3" type="radio" name="recommend" value="" class="h-4 w-4 border-gray-300">
+                            <label for="recommend-3" class="font-medium ml-2 block">
+                                Not Sure
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="p-2 w-full">
+                    <div class="relative">
+                        <label for="">What is your favorite feature of Microverse?</label>
+                        <select class="w-full bg-white text-gray-600 rounded border border-gray-300 text-base outline-none py-1 px-3 leading-8" name="">
+                            <option selected>Select an Option </option>
+                            <option value="challengs">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="opensource">Open source</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2 ">Font-end Projects</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Back-end Projects</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 ">
+                        <span class="ml-2">Data visualization</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Challenges</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Open Source Community</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Gitter help rooms</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2 ">videos</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">City Meetups</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Wiki</span>
+                    </label>
+
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Forum</span>
+                    </label>
+        
+                    <label class="block items-center mt-3">
+                        <input type="checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2">Additional Courses</span>
+                    </label>
+                </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 ">Any comments or suggestions?</label>
+                  <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 text-gray-600  h-32 text-base outline-none py-1 resize-none leading-6 px-3">Enter your comment here...</textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="w-full bg-green-500 text-white border-0 py-2 px-8 rounded text-lg">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2> Thestart of a new begining</h2>
+</body>
+</html>
